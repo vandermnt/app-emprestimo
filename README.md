@@ -1,5 +1,5 @@
 # App Empréstimos
-Software desenvolvido visando o Trabalho Final da disciplina de Dispositivos Móveis. Professor: Diego Stiehl
+Software desenvolvido visando otimizar o empréstimo de objetos.
 
 ## Aplicação
 
