@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="620dp"
+             tools:context=".ui.FragmentPeople"
+             android:name="androidx.navigation.fragment.NavHostFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="56dp"
+                android:layout_height="108dp"
+                android:clickable="true" app:srcCompat="@android:drawable/ic_input_add"
+                android:id="@+id/addPeople"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.798" android:isScrollContainer="false"
+                app:backgroundTint="#0040FF" app:fabSize="normal"
+                app:fabCustomSize="?attr/actionBarSize" app:maxImageSize="@android:dimen/app_icon_size"
+                android:layout_marginEnd="16dp" android:layout_marginRight="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listPeoples"
+                tools:listitem="@layout/item_people"
+                tools:layout_editor_absoluteY="-54dp" tools:layout_editor_absoluteX="-16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

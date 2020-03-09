@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.FragmentConfirmationLoan">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:layout_editor_absoluteY="613dp" tools:layout_editor_absoluteX="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+
+
+        <TextView
+                android:text="@string/tvitem"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/tvitem"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/name_item" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.333"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/name_item"
+                android:ems="10"
+                android:id="@+id/name_item"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="40dp"
+                android:layout_marginStart="40dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="40dp"
+                android:layout_marginTop="64dp" app:layout_constraintHorizontal_bias="0.0"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:hint="@string/data_devolution"
+                android:ems="10"
+                android:id="@+id/data_devolution" android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="40dp"
+                android:layout_marginStart="40dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="40dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/name_item" app:layout_constraintHorizontal_bias="0.0"/>
+        <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data_devolution"
+                app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="12dp"/>
+        <TextView
+                android:text="@string/tvDadosPeople"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:id="@+id/tvDadosPeople"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0" android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp" app:layout_constraintHorizontal_bias="1.0"/>
+        <TextView
+                android:text="@string/tvname"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvname_item"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDadosPeople" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="32dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+                app:layout_constraintVertical_bias="0.011"/>
+        <TextView
+                android:text="@string/tvdatanasc"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvdatanasc"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvname_item" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+        />
+        <TextView
+                android:text="TextView"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNamePeople" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp" app:layout_constraintStart_toEndOf="@+id/tvname_item"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDadosPeople" app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:text="TextView"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDataNasc"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNamePeople"
+                app:layout_constraintStart_toEndOf="@+id/tvdatanasc"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp" app:layout_constraintHorizontal_bias="0.333"/>
+        <TextView
+                android:text="@string/tvtel"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvtel" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvdatanasc" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="TextView"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTel" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp" app:layout_constraintStart_toEndOf="@+id/tvtel"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="340dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDataNasc" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="@string/tvcep"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvcep" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvtel" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="TextView"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCep" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTel" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.006"
+                app:layout_constraintStart_toEndOf="@+id/tvcep" android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"/>
+        <TextView
+                android:text="@string/tvendereco"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvendereco" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvcep" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="TextView"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEndereco" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp" app:layout_constraintStart_toEndOf="@+id/tvendereco"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvCep" app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="@string/tvbairro"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvbairro" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvendereco" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.003"/>
+        <TextView
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBairro" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp" app:layout_constraintStart_toEndOf="@+id/tvbairro"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvendereco"
+                app:layout_constraintVertical_bias="0.04"/>
+        <ImageView
+                android:src="@drawable/ico_calendar"
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView2" app:layout_constraintStart_toStartOf="@+id/data_devolution"
+                app:layout_constraintEnd_toEndOf="@+id/data_devolution" app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintTop_toTopOf="@+id/data_devolution"
+                app:layout_constraintBottom_toBottomOf="@+id/data_devolution" app:layout_constraintVertical_bias="0.0"/>
+        <View
+                android:id="@+id/divider4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvbairro"
+                app:layout_constraintVertical_bias="0.026"/>
+        <Button
+                android:text="@string/btConfirmationLoan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#04B404"
+                android:textColor="#FFFFFF"
+                android:id="@+id/btConfirmationLoan" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/divider4" android:layout_marginTop="16dp"
+                app:layout_constraintHorizontal_bias="1.0" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</FrameLayout>

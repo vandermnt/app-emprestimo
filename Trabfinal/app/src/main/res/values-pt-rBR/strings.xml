@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> Emprestando </string>
+    <string name="title_loan">Empréstimos</string>
+    <string name="title_people">Pessoas</string>
+    <string name="title_historic">Histórico</string>
+    <string name="title_reg">REGISTRO PESSOA</string>
+    <string name="btSavePeople">Salvar</string>
+
+    <string name="tvname">Nome:</string>
+    <string name="tvdatanasc">Data de Nasc.:</string>
+    <string name="tvtel">Telefone:</string>
+    <string name="tvcep">CEP:</string>
+    <string name="tvbairro">Bairro:</string>
+    <string name="tvendereco">Endereço:</string>
+    <string name="name_item">Nome Item</string>
+    <string name="data_devolution">Data Prev. Devolução</string>
+    <string name="tvitem">Dados Empréstimo</string>
+    <string name="btConfirmationLoan">Confirmar Empréstimo</string>
+    <string name="tvselect_people">Escolha uma pessoa:</string>
+    <string name="tvDadosPeople">Dados Emprestador</string>
+
+</resources>
+
+

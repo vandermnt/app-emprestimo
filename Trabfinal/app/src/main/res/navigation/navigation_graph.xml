@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_graph"
+            app:startDestination="@id/loansFragment">
+
+    <fragment
+            android:id="@+id/loansFragment" android:name="com.vander.trabalho.trabfinal.ui.FragmentLoan"
+            android:label="fragment_loans" tools:layout="@layout/fragment_loan">
+
+        <action android:id="@+id/action_loansFragment_to_fragmentPeople" app:destination="@id/peopleFragment"/>
+        <action android:id="@+id/action_loansFragment_to_historicFragment" app:destination="@id/historicFragment"/>
+    </fragment>
+    <fragment android:id="@+id/peopleFragment" android:name="com.vander.trabalho.trabfinal.ui.FragmentPeople"
+              android:label="fragment_people" tools:layout="@layout/fragment_people"/>
+    <fragment android:id="@+id/addPeopleFragment"
+              android:name="com.vander.trabalho.trabfinal.ui.FragmentAddPeople"
+              android:label="fragment_add_people" tools:layout="@layout/fragment_add_people">
+        <action android:id="@+id/action_addPeopleFragment_to_peopleFragment" app:destination="@id/peopleFragment"/>
+    </fragment>
+    <fragment android:id="@+id/historicFragment" android:name="com.vander.trabalho.trabfinal.ui.FragmentHistoric"
+              android:label="fragment_historic" tools:layout="@layout/fragment_historic"/>
+</navigation>
