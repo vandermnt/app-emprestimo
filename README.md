@@ -15,7 +15,7 @@ Aplicação iŕa contar com os seguintes requisitos:
 ## Elaborado com
 
 * [Kotlin](https://kotlinlang.org/) - Linguagem utilizada.
-* [Android Studio](https://developer.android.com/studio) - IDE utilizado.
+* [Android Studio](https://developer.android.com/studio) - IDE utilizada.
 * [Sqlite](https://www.sqlite.org) - Banco de Dados utilizado.
 
 ## Autor
