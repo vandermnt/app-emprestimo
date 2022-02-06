@@ -7,10 +7,10 @@ O software consiste em um App de Empréstimos. A aplicação visa realizar empr�
 
 Aplicação iŕa contar com os seguintes requisitos:
 
-* Cadastrar Pessoa
-* Cadastrar Empréstimo
-* Visualizar Empréstimo
-* Visualizar Histórico Empréstimos
+* Cadastrar Pessoa;
+* Cadastrar Empréstimo;
+* Visualizar Empréstimo;
+* Visualizar Histórico Empréstimos;
 
 ## Elaborado com
 
