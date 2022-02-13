@@ -3,7 +3,7 @@ Software desenvolvido visando otimizar o empréstimo de objetos.
 
 ## Aplicação
 
-O software consiste em um App de Empréstimos. A aplicação visa realizar empréstimos de qualquer coisa, não tem algo específico. Determinada pessoa solicita o que quer emprestar, e a pessoa o qual estará emprestando o item, irá cadastrar esse empréstimo na aplicação. Tendo assim um controle dos itens emprestados. Os dados serão armazanados no banco local.
+O software consiste em um App de Empréstimos. A aplicação visa realizar empréstimos de qualquer objeto, não tem algo específico. Determinada pessoa solicita o que quer emprestar, e a pessoa o qual estará emprestando o item, irá cadastrar esse empréstimo na aplicação. Tendo assim um controle dos itens emprestados. Os dados serão armazanados no banco local.
 
 Aplicação iŕa contar com os seguintes requisitos:
 
